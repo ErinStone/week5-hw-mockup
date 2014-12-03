@@ -4,7 +4,6 @@ body{
   font-family: 'Trebuchet MS', Trebuchet, 'Lucinda Sans Unicode', 'Lucinda Grande', Arial, sans-serif;
   line-height: 1.429;
   background-color: white;
-  //border: 2px solid black;
 }
 
 /* Header */
@@ -45,13 +44,23 @@ header nav li a{
   text-decoration: none;
 }
 
+/*container style*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  min-height: 1px;
+  position: absolute;
+  z-index: -1;
+ 
+}
 /*sidebar style */
 .sidebar{
   width: 25%;
   float: left;
   background-color: #8F54AB;
-  //border: 2px solid green;
-  min-height: 100%;
+ 
+ 
 }
 .sidebar ul{
   height: 100%;
@@ -62,6 +71,7 @@ header nav li a{
   padding-bottom: 2.5rem;
 }
 .sidebar li:first-of-type {padding-top: 1.5rem;}
+
 .sidebar li a{
   width: auto;
   color: #FFFFFF;
@@ -70,22 +80,29 @@ header nav li a{
 }
 .white-block{
   background-color: white;
-  padding 2%;
+  padding: 2%;
+  min-height: 1px;
 }
 .blue-block{
   background-color: blue;
   padding: 28%;
+  min-height: 1px;
 }
 
 /*main content */
 .main-content{
-  //border: 2px solid green;
+ 
   float: left;
-  width: 68%;
-  margin-left: 1.858736059%;
-  min-height: 100%;
+  width: 72%;
+  margin-left: 2%;
+  height: 90%;
+ 
+  
 }
 
+article {
+  padding-bottom: 15.5%;
+}
 article h2{
   background-color: yellow;
   padding-top: 2%;
@@ -94,33 +111,19 @@ article h2{
   text-indent: 10%
 }
 
-article{
-  padding-bottom: 14%;
-}
+
 
 /*footer style */
 footer{
-  //border: 2px solid red;
   margin: 0px auto;
   width: 100%;
-  background-color: gray; 
-  text-align: left; /* center the copyright text */
-}
-
-footer ul {
-  list-style: none;
-  padding-right: 5%;
+  background-color: gray;
+  position: relative;
   text-align: right;
 }
 
-footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-}
 footer i {
   vertical-align: middle;
-  transition: color .3s ease-in-out;	
 }
 
 
