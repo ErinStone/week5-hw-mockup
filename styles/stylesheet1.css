@@ -54,6 +54,12 @@ header nav li a{
   z-index: -1;
  
 }
+/*clearfix hack to keep the parent fromcollapsing
+ when all children float */
+.container:after {content: ""; 
+  display: table; 
+  clear:both;}
+
 /*sidebar style */
 .sidebar{
   width: 25%;
@@ -85,7 +91,7 @@ header nav li a{
 }
 .blue-block{
   background-color: blue;
-  padding: 28%;
+  padding: 31%;
   min-height: 1px;
 }
 
